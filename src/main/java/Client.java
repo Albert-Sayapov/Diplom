@@ -13,33 +13,12 @@ public class Client {
             System.out.println(reader.readLine());
             writer.println(new Scanner(System.in)
                     .nextLine());
-//            while (reader.readLine() != null) {
-//                System.out.println(reader.readLine());
-//            }
-            System.out.println(reader.readLine());
-            System.out.println(reader.readLine());
-            System.out.println(reader.readLine());
-            System.out.println(reader.readLine());
-            System.out.println(reader.readLine());
-            System.out.println(reader.readLine());
-            System.out.println(reader.readLine());
-            System.out.println(reader.readLine());
-            System.out.println(reader.readLine());
-            System.out.println(reader.readLine());
-            System.out.println(reader.readLine());
-            System.out.println(reader.readLine());
-            System.out.println(reader.readLine());
-            System.out.println(reader.readLine());
-            System.out.println(reader.readLine());
-            System.out.println(reader.readLine());
-            System.out.println(reader.readLine());
-            System.out.println(reader.readLine());
-            System.out.println(reader.readLine());
-            System.out.println(reader.readLine());
-            System.out.println(reader.readLine());
-            System.out.println(reader.readLine());
-            System.out.println(reader.readLine());
-            System.out.println(reader.readLine());
+            StringBuilder stringBuilder = new StringBuilder();
+            String result;
+            while ((result = reader.readLine()) != null) {
+                stringBuilder.append(result);
+                System.out.println(result);
+            }
         } catch (IOException e) {
             System.out.println("Не могу запустить клиента");
             e.printStackTrace();
